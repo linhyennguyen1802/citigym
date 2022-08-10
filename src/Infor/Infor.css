@@ -1,0 +1,886 @@
+* {
+    box-sizing: border-box;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.content {
+    display: flex;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/*--------------------Giới thiệu-----------------*/
+
+.gioithieu {
+    padding: 50px 150px 50px 150px;
+}
+
+.gioithieu_table {
+    border-collapse: collapse;
+}
+
+.gt_td {
+    font-size: 52px;
+    font-weight: bold;
+    font-family: 'Cabin', sans-serif;
+    color: #a50000;
+}
+
+.content_test {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 22px;
+    padding: 20px 50px 20px 50px;
+    line-height: 1.5;
+}
+
+.reason {
+    color: #a50000;
+    font-weight: bold;
+}
+
+.citigym {
+    color: #a50000;
+}
+
+
+
+/*------------------------- REPONSIVE -------------------------*/
+
+@media only screen and (min-width: 1025px) {
+    ... .topnav {
+        display: block;
+    }
+    .dropdown {
+        display: none;
+    }
+    .header_mobile {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:749px) and (max-width: 1024px) {
+    ... .topnav {
+        display: block;
+    }
+    .dropdown {
+        display: none;
+    }
+    .header_mobile {
+        display: none;
+    }
+    .topnav a {
+        padding: 5px 15px 0px 15px;
+        font-size: 14px;
+    }
+    .header_table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .header_left {
+        width: 30%;
+        padding: 10px;
+    }
+    .header_right {
+        width: 70%;
+        padding: 10px;
+    }
+    .logo_header {}
+    #logo_header {
+        width: 70%;
+    }
+    .img_banner {
+        text-align: center;
+        border-bottom-right-radius: 100px;
+        position: relative;
+    }
+    .include_img {
+        position: absolute;
+        bottom: -5px;
+        padding: 0px;
+        margin: 0px;
+    }
+    #tieuvy {
+        max-width: 75%;
+    }
+    .content_banner {
+        background-size: 20%;
+    }
+    .banner {
+        width: 100%;
+    }
+    .tapluyen_td {
+        font-size: 42px;
+        padding: 15px 5px 5px 5px;
+        word-spacing: 0px;
+    }
+    .td_empty {
+        width: 20%;
+    }
+    .td_chi {
+        font-size: 24px;
+        text-align: right;
+    }
+    .td_399 {
+        font-size: 64px;
+        padding-left: 5px;
+    }
+    .td_000 {
+        font-size: 38px;
+        padding-right: 10px;
+        vertical-align: bottom;
+    }
+    .td_vnd {
+        font-size: 20px;
+    }
+    .td_thang {
+        font-size: 20px;
+        vertical-align: top;
+    }
+    .check_td {
+        font-size: 14px;
+    }
+    .td_empty_02 {
+        width: 20%
+    }
+    .td_empty_03 {
+        width: 15%
+    }
+    .td_empty_04 {
+        width: 25%
+    }
+    .width_tb {
+        width: 100%;
+    }
+    .form {
+        margin-top: 5px;
+    }
+    #name, #phone, #email {
+        width: 100%;
+        height: 45px;
+        padding: 15px;
+    }
+    #button_td {
+        font-size: 12px;
+        border-radius: 15px;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        width: 100%;
+        padding: 10px;
+    }
+    .note_banner {
+        font-size: 12px;
+    }
+    .gioithieu {
+        padding: 10px 30px;
+    }
+    .gioithieu_table {
+        border-collapse: collapse;
+    }
+    .gt_td {
+        font-size: 38px;
+    }
+    .content_test {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 16px;
+        padding: 10px 20px 10px 20px;
+        line-height: 1.5;
+    }
+    /*--------------------Trang thiết bị-----------------*/
+    .trangthietbi {
+        padding: 10px 30px;
+    }
+    .trangthietbi_tb {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    .trangthietbi_title {
+        width: 100%;
+        font-size: 38px;
+    }
+    .trangthietbi_content {
+        width: 100%;
+        font-size: 16px;
+        padding: 15px;
+    }
+    .trangthietbi_conchild_001, .trangthietbi_conchild_002, .trangthietbi_conchild_003, .trangthietbi_conchild_004, {
+        width: 25%;
+        padding: 5px;
+    }
+    .img_ttb {
+        text-align: center;
+    }
+    #img_ttb_001, #img_ttb_002, #img_ttb_003, #img_ttb_004 {
+        width: 60%;
+        border: 3px solid #ffff;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border-radius: 10px;
+    }
+    .titile_ttb {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 5px;
+    }
+    .content_ttb {
+        font-size: 16px;
+        padding: 0px;
+    }
+    /*--------------------Dịch vụ-----------------*/
+    .dichvu {
+        padding: 10px 30px;
+    }
+    .dichvu_table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .dichvu_tittle {
+        width: 100%;
+        font-size: 38px;
+        font-weight: bold;
+        font-family: 'Cabin', sans-serif;
+        color: #a50000;
+    }
+    .dichvu_content {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 16px;
+        padding: 20px;
+        color: #252525;
+    }
+    /*--------------------Hệ thống-----------------*/
+    .hethong {
+        padding: 10px 30px;
+    }
+    .hethong_table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    .hethong_title {
+        width: 100%;
+        font-size: 38px;
+    }
+    .hethong_content {
+        width: 100%;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 16px;
+        padding: 20px;
+    }
+    .ten_citigym {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Cabin', sans-serif;
+        margin: 10px;
+        padding: 0px
+    }
+    .thongtin_citigym {
+        width: 100%;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 16px;
+        margin: 5px;
+        padding: 0px
+    }
+    #hethong_img_001, #hethong_img_002, #hethong_img_003, #hethong_img_004, #hethong_img_005, #hethong_img_006 {
+        width: 100%;
+        border: 3px solid #ffff;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border-radius: 10px;
+    }
+    /*----------------------Đăng ký---------------------------------*/
+    .dangky_img {
+        margin: 20px 60px 15px 60px;
+        font-family: 'Cabin', sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+    }
+    .dangky_img span {
+        font-weight: bold;
+        font-size: 86px;
+    }
+    .dangky_content {
+        margin: 15px 60px 40px 60px;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 24px;
+    }
+    .icon {
+        width: 5%;
+        vertical-align: top;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width:601px) and (max-width: 768px) {
+    ... .topnav {
+        display: block;
+    }
+    .dropdown {
+        display: none;
+    }
+    .header_mobile {
+        display: none;
+    }
+    .topnav a {
+        padding: 5px 15px 0px 15px;
+        font-size: 14px;
+    }
+    .header_table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .header_left {
+        width: 30%;
+        padding: 10px;
+    }
+    .header_right {
+        width: 70%;
+        padding: 10px;
+    }
+    .logo_header {}
+    #logo_header {
+        width: 70%;
+    }
+    .img_banner {
+        text-align: center;
+        border-bottom-right-radius: 100px;
+        position: relative;
+    }
+    .include_img {
+        position: absolute;
+        bottom: -5px;
+        padding: 0px;
+        margin: 0px;
+    }
+    #tieuvy {
+        max-width: 100%;
+    }
+    .content_banner {
+        background-size: 20%;
+    }
+    .banner {
+        width: 100%;
+    }
+    .tapluyen_td {
+        font-size: 32px;
+        padding: 15px 5px 5px 5px;
+        word-spacing: 5px;
+    }
+    .td_empty {
+        width: 5%;
+    }
+    .td_chi {
+        font-size: 20px;
+    }
+    .td_399 {
+        font-size: 54px;
+        padding-left: 5px;
+    }
+    .td_000 {
+        font-size: 32px;
+        padding-right: 10px;
+    }
+    .td_vnd {
+        font-size: 20px;
+    }
+    .td_thang {
+        font-size: 20px;
+        vertical-align: top;
+    }
+    .check_td {
+        font-size: 14px;
+    }
+    .td_empty_02 {
+        width: 5%
+    }
+    .td_empty_03 {
+        width: 5%
+    }
+    .td_empty_04 {
+        width: 10%
+    }
+    .width_tb {
+        width: 100%;
+    }
+    .form {
+        margin-top: 5px;
+    }
+    #name, #phone, #email {
+        width: 100%;
+        height: 45px;
+        padding: 15px;
+    }
+    #button_td {
+        font-size: 12px;
+        border-radius: 15px;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        width: 100%;
+        padding: 10px;
+    }
+    .note_banner {
+        font-size: 12px;
+    }
+    .gioithieu {
+        padding: 10px 20px;
+    }
+    .gioithieu_table {
+        border-collapse: collapse;
+    }
+    .gt_td {
+        font-size: 36px;
+    }
+    .content_test {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 14px;
+        padding: 10px 20px 10px 20px;
+        line-height: 1.5;
+    }
+    /*--------------------Trang thiết bị-----------------*/
+    .trangthietbi {
+        padding: 10px 20px;
+    }
+    .trangthietbi_tb {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    .trangthietbi_title {
+        width: 100%;
+        font-size: 36px;
+    }
+    .trangthietbi_content {
+        width: 100%;
+        font-size: 14px;
+        padding: 15px;
+    }
+    .trangthietbi_conchild_001, .trangthietbi_conchild_002, .trangthietbi_conchild_003, .trangthietbi_conchild_004, {
+        width: 25%;
+        padding: 5px;
+    }
+    .img_ttb {
+        text-align: center;
+    }
+    #img_ttb_001, #img_ttb_002, #img_ttb_003, #img_ttb_004 {
+        width: 60%;
+        border: 3px solid #ffff;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border-radius: 10px;
+    }
+    .titile_ttb {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 5px;
+    }
+    .content_ttb {
+        font-size: 14px;
+        padding: 0px;
+    }
+    /*--------------------Dịch vụ-----------------*/
+    .dichvu {
+        padding: 10px 20px;
+    }
+    .dichvu_table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .dichvu_tittle {
+        width: 100%;
+        font-size: 36px;
+    }
+    .dichvu_content {
+        font-size: 14px;
+        padding: 20px;
+    }
+    /*--------------------Hệ thống-----------------*/
+    .hethong {
+        padding: 10px 20px;
+    }
+    .hethong_table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    .hethong_title {
+        width: 100%;
+        font-size: 36px;
+    }
+    .hethong_content {
+        width: 100%;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 14px;
+        padding: 20px;
+    }
+    .ten_citigym {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Cabin', sans-serif;
+        margin: 10px;
+        padding: 0px
+    }
+    .thongtin_citigym {
+        width: 100%;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 14px;
+        margin: 5px;
+        padding: 0px
+    }
+    #hethong_img_001, #hethong_img_002, #hethong_img_003, #hethong_img_004, #hethong_img_005, #hethong_img_006 {
+        width: 100%;
+        border: 3px solid #ffff;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border-radius: 10px;
+    }
+    /*----------------------Đăng ký---------------------------------*/
+    .dangky_img {
+        margin: 20px 30px 15px 30px;
+        font-family: 'Cabin', sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+    }
+    .dangky_img span {
+        font-weight: bold;
+        font-size: 86px;
+    }
+    .dangky_content {
+        margin: 15px 30px 40px 30px;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 24px;
+    }
+    .icon {
+        width: 5%;
+        vertical-align: top;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (min-width:320px) and (max-width: 600px) {
+    ... .col-1 {
+        width: 100%;
+    }
+    .col-2 {
+        width: 100%;
+    }
+    .col-3 {
+        width: 100%;
+    }
+    .col-4 {
+        width: 100%;
+    }
+    .col-5 {
+        width: 100%;
+    }
+    .col-6 {
+        width: 100%;
+    }
+    .col-7 {
+        width: 100%;
+    }
+    .col-8 {
+        width: 100%;
+    }
+    .col-9 {
+        width: 100%;
+    }
+    .col-10 {
+        width: 100%;
+    }
+    .col-11 {
+        width: 100%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+    .topnav {
+        display: none;
+    }
+    .dropdown {
+        display: block;
+    }
+    .header_right {
+        width: 20%;
+    }
+    .header_left {
+        width: 80%;
+    }
+    .content {
+        display: block;
+    }
+    .img_banner {
+        min-height: 420px;
+        border-bottom-right-radius: 100px;
+    }
+    .include_img {
+        bottom: -5px;
+    }
+    #tieuvy {
+        max-width: 80%;
+    }
+    .tapluyen_td {
+        font-size: 42px;
+        padding: 30px 5px 5px 5px;
+        word-spacing: 5px;
+    }
+    .td_empty {
+        width: 20%;
+    }
+    .td_chi {
+        font-size: 20px;
+    }
+    .td_399 {
+        font-size: 80px;
+        padding-left: 20px;
+    }
+    .td_000 {
+        font-size: 36px;
+        padding-right: 10px;
+        font-weight: bold;
+    }
+    .td_vnd {
+        font-size: 20px;
+    }
+    .td_thang {
+        font-size: 20px;
+    }
+    .check_td {
+        font-size: 20px;
+    }
+    .td_empty_02 {
+        width: 10%
+    }
+    .td_empty_03 {
+        width: 10%
+    }
+    .td_empty_04 {
+        width: 20%
+    }
+    .width_tb {
+        width: 100%;
+    }
+    .form {
+        margin-top: 10px;
+    }
+    #name, #phone, #email {
+        font-size: 14px;
+        width: 100%;
+        height: 45px;
+        padding: 15px;
+    }
+    #button_td {
+        font-size: 14px;
+        border-radius: 15px;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        width: 100%;
+        height: 45px;
+    }
+    .gioithieu {
+        padding: 0px;
+    }
+    .gioithieu_table {
+        border-collapse: collapse;
+    }
+    .gt_td {
+        font-size: 32px;
+    }
+    .content_test {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 14px;
+        padding: 10px 20px 10px 20px;
+        line-height: 1.5;
+    }
+    /*--------------------Trang thiết bị-----------------*/
+    .trangthietbi {
+        padding: 0px;
+    }
+    .trangthietbi_tb {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    .trangthietbi_title {
+        width: 100%;
+        font-size: 32px;
+    }
+    .trangthietbi_content {
+        width: 100%;
+        font-size: 14px;
+        padding: 15px;
+    }
+    .trangthietbi_conchild_001, .trangthietbi_conchild_002, .trangthietbi_conchild_003, .trangthietbi_conchild_004, {
+        width: 25%;
+        padding: 5px;
+    }
+    .img_ttb {
+        text-align: center;
+    }
+    #img_ttb_001, #img_ttb_002, #img_ttb_003, #img_ttb_004 {
+        width: 60%;
+        border: 3px solid #ffff;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border-radius: 10px;
+    }
+    .titile_ttb {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 5px;
+    }
+    .content_ttb {
+        font-size: 14px;
+        padding: 10px;
+    }
+    /*--------------------Dịch vụ-----------------*/
+    .dichvu {
+        padding: 0px;
+    }
+    .dichvu_table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .dichvu_tittle {
+        width: 100%;
+        font-size: 32px;
+        font-weight: bold;
+        font-family: 'Cabin', sans-serif;
+        color: #a50000;
+    }
+    .dichvu_content {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 14px;
+        padding: 20px;
+        color: #252525;
+    }
+    /*--------------------Hệ thống-----------------*/
+    .hethong {
+        padding: 0px;
+    }
+    .hethong_table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    .hethong_title {
+        width: 100%;
+        font-size: 32px;
+    }
+    .hethong_content {
+        width: 100%;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 14px;
+        padding: 20px;
+    }
+    .ten_citigym {
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Cabin', sans-serif;
+        margin: 10px;
+        padding: 0px
+    }
+    .thongtin_citigym {
+        width: 100%;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 14px;
+        margin: 5px;
+        padding: 0px
+    }
+    #hethong_img_001, #hethong_img_002, #hethong_img_003, #hethong_img_004, #hethong_img_005, #hethong_img_006 {
+        width: 100%;
+        border: 3px solid #ffff;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border-radius: 10px;
+    }
+    /*----------------------Đăng ký---------------------------------*/
+    .dangky_img {
+        margin: 10px 20px 10px 20px;
+        font-family: 'Cabin', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .dangky_img span {
+        font-weight: bold;
+        font-size: 72px;
+    }
+    .dangky_content {
+        margin: 10px 20px 10px 20px;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 22px;
+    }
+    .icon {
+        width: 5%;
+        vertical-align: top;
+    }
+}

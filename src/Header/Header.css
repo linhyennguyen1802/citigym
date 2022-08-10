@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.content {
+    display: flex;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*---------------------------- HEADER--------------------------------*/
+/*--- header _ main---*/
+.header_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.header_left {
+    width: 30%;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.header_right {
+    width: 70%;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.logo_header {
+    background-color: #f1f1f1;
+}
+
+#logo_header {
+    width: 70%;
+}
+
+.topnav {
+    /* Style the top navigation bar */
+    overflow: hidden;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.topnav a {
+    /* Style the topnav links */
+    float: right;
+    display: block;
+    color: #454545;
+    text-align: center;
+    padding: 5px 15px 0px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Comfortaa', cursive;
+}
+
+.topnav a:hover {
+    /* Change color on hover */
+    background-color: rgba(165, 0, 0, 0.1);
+    color: #252525;
+}
+
+.topnav .icon {
+    /*Active & Icon*/
+    display: none;
+}
+
+.sticky {
+    /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+    padding-top: 110px;
+}
+
+/*--- header _ mobile---*/
+
+.header_mobile_table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.hmt_td {
+    width: 25%;
+}
+
+.dropbtn {
+    /* Dropdown Button */
+    background-color: #a50000;
+    color: #f1f1f1;
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    width:100%;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    /* Dropdown button on hover & focus */
+    background-color: rgba(165, 0, 0, 0.1);
+    color: #252525;
+}
+
+.dropdown {
+    /* The container <div> - needed to position the dropdown content */
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    /* Dropdown Content (Hidden by Default) */
+    display: none;
+    position: inherit;
+    background-color: #f1f1f1;
+    z-index: 1;
+    font-family: 'Comfortaa', cursive;
+    font-size: 11px;
+    width: auto;
+}
+
+.dropdown-content a {
+    /* Links inside the dropdown */
+    color: #252525;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    overflow: auto;
+    font-weight: bold;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+    display: block;
+}
+
+
+
+/*------------------------- REPONSIVE -------------------------*/
+
+@media only screen and (min-width: 1025px) {
+    ... .topnav {
+        display: block;
+    }
+    .dropdown {
+        display: none;
+    }
+    .header_mobile {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:750px) and (max-width: 1024px) {
+    ... .topnav {
+        display: block;
+    }
+    .dropdown {
+        display: none;
+    }
+    .header_mobile {
+        display: none;
+    }
+    .topnav a {
+        padding: 5px 15px 0px 15px;
+        font-size: 14px;
+    }
+    .header_table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .header_left {
+        width: 30%;
+        padding: 10px;
+    }
+    .header_right {
+        width: 70%;
+        padding: 10px;
+    }
+    .logo_header {}
+    #logo_header {
+        width: 70%;
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width:601px) and (max-width: 768px) {
+    ... .topnav {
+        display: block;
+    }
+    .dropdown {
+        display: none;
+    }
+    .header_mobile {
+        display: none;
+    }
+    .topnav a {
+        padding: 5px 15px 0px 15px;
+        font-size: 14px;
+    }
+    .header_table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .header_left {
+        width: 30%;
+        padding: 10px;
+    }
+    .header_right {
+        width: 70%;
+        padding: 10px;
+    }
+    .logo_header {}
+    #logo_header {
+        width: 70%;
+    }
+    
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (min-width:320px) and (max-width: 600px) {
+    ... .col-1 {
+        width: 100%;
+    }
+    .col-2 {
+        width: 100%;
+    }
+    .col-3 {
+        width: 100%;
+    }
+    .col-4 {
+        width: 100%;
+    }
+    .col-5 {
+        width: 100%;
+    }
+    .col-6 {
+        width: 100%;
+    }
+    .col-7 {
+        width: 100%;
+    }
+    .col-8 {
+        width: 100%;
+    }
+    .col-9 {
+        width: 100%;
+    }
+    .col-10 {
+        width: 100%;
+    }
+    .col-11 {
+        width: 100%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+    .topnav {
+        display: none;
+    }
+    .dropdown {
+        display: block;
+    }
+    .header_right {
+        width: 20%;
+    }
+    .header_left {
+        width: 80%;
+    }
+    .content {
+        display: block;
+    }
+    
+}
